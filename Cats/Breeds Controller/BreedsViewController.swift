@@ -10,14 +10,19 @@ import UIKit
 
 class BreedsViewController: UIViewController {
 
-    var tableView: UITableView = {
+    // MARK:- UI objects
+    private var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return tableView
     }()
 
+    // MARK:- NetworkManager
+    private var networkManager = NetworkCatsManager()
     
+    // MARK:- class fields
+    private var breedsCat = [Breed]()
     
     // MARK:- Override viewDidLoad
     override func viewDidLoad() {
@@ -26,9 +31,10 @@ class BreedsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         setupTableView()
-        
+        fetchData()
     }
     
+    // MARK:- method Setup TableView
     fileprivate func setupTableView(){
         view.addSubview(tableView)
         
@@ -36,23 +42,34 @@ class BreedsViewController: UIViewController {
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        
+    }
+    
+    // MARK:- method fetch data (breeds cats)
+    fileprivate func fetchData(){
+        networkManager.onCompletionBreeds = { breeds in
+            self.breedsCat = breeds
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+        networkManager.fetchBreeds()
     }
     
 }
 
+// MARK:- Extension tableView
 extension BreedsViewController: UITableViewDataSource, UITableViewDelegate{
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-       
-        cell.textLabel?.text = "\(indexPath.row)"
+        let breedCatName = breedsCat[indexPath.row].name
+        cell.textLabel?.text = breedCatName
         return cell
     }
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return breedsCat.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
