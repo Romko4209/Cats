@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05281681251E70DC00DCDAD9 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05281680251E70DC00DCDAD9 /* Breed.swift */; };
+		05281683251E712800DCDAD9 /* NetworkCatsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05281682251E712800DCDAD9 /* NetworkCatsManager.swift */; };
+		05281685251E716100DCDAD9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05281684251E716100DCDAD9 /* Constant.swift */; };
 		058DF8F1251E3471005D5B05 /* BreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058DF8F0251E3471005D5B05 /* BreedsViewController.swift */; };
 		05E33F0E251E313E0024DC57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E33F0D251E313E0024DC57 /* AppDelegate.swift */; };
 		05E33F10251E313E0024DC57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E33F0F251E313E0024DC57 /* SceneDelegate.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05281680251E70DC00DCDAD9 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		05281682251E712800DCDAD9 /* NetworkCatsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCatsManager.swift; sourceTree = "<group>"; };
+		05281684251E716100DCDAD9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		058DF8F0251E3471005D5B05 /* BreedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewController.swift; sourceTree = "<group>"; };
 		05E33F0A251E313E0024DC57 /* Cats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E33F0D251E313E0024DC57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +86,7 @@
 				05E33F0F251E313E0024DC57 /* SceneDelegate.swift */,
 				05E33F16251E31400024DC57 /* Assets.xcassets */,
 				05E33F1B251E31400024DC57 /* Info.plist */,
+				05281684251E716100DCDAD9 /* Constant.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -104,6 +111,8 @@
 		05E33F24251E31D70024DC57 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				05281680251E70DC00DCDAD9 /* Breed.swift */,
+				05281682251E712800DCDAD9 /* NetworkCatsManager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -194,9 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05281681251E70DC00DCDAD9 /* Breed.swift in Sources */,
+				05281683251E712800DCDAD9 /* NetworkCatsManager.swift in Sources */,
 				05E33F0E251E313E0024DC57 /* AppDelegate.swift in Sources */,
 				058DF8F1251E3471005D5B05 /* BreedsViewController.swift in Sources */,
 				05E33F10251E313E0024DC57 /* SceneDelegate.swift in Sources */,
+				05281685251E716100DCDAD9 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
