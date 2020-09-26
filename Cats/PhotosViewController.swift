@@ -22,17 +22,17 @@ class PhotosViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Random photos cats"
-        label.font = UIFont(name: "Chalkduster", size: 27)
+        label.font = UIFont(name: "Chalkduster", size: 25)
         return label
     }()
     
     let labelTap: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Сlick on the photo \nof the cat"
+        label.text = "Сlick on the\nphoto of the cat"
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.font = UIFont(name: "Chalkduster", size: 27)
+        label.font = UIFont(name: "Chalkduster", size: 25)
         return label
     }()
     
@@ -95,8 +95,7 @@ class PhotosViewController: UIViewController {
         labelRandomCat.bottomAnchor.constraint(equalTo: buttonCat.topAnchor,constant: -50).isActive = true
         
         labelTap.topAnchor.constraint(equalTo: buttonCat.bottomAnchor,constant: 50).isActive = true
-        labelTap.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: 16).isActive = true
-        labelTap.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 16).isActive = true
+        labelTap.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
     
     // MARK:- method buttonCatTapped
