@@ -18,6 +18,18 @@ extension UIButton{
         self.layer.add(rotation, forKey: "rotationAnimation")
     }
     
+    func pulsateStartAnimation() {
+           let pulse : CASpringAnimation = CASpringAnimation(keyPath: "transform.scale")
+           pulse.fromValue = 0.95
+           pulse.duration = 0.6
+           pulse.toValue = 1.0
+           pulse.repeatCount = Float.greatestFiniteMagnitude
+           pulse.autoreverses = true
+           pulse.damping = 1.0
+           pulse.initialVelocity = 0.5
+           self.layer.add(pulse, forKey: "PulseAnimation")
+       }
+    
     func imageURL(imageURL: String?,label: UILabel?){
         guard let imageURL = imageURL else {return}
         guard let url = URL(string: imageURL) else {return}
