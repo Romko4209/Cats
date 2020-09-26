@@ -17,12 +17,27 @@ class BreedsViewController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return tableView
     }()
+    
+    private let searchController = UISearchController(searchResultsController: nil)
 
+    
     // MARK:- NetworkManager
     private var networkManager = NetworkCatsManager()
-    
+
     // MARK:- class fields
     private var breedsCat = [Breed]()
+    var filteredBreed = [Breed]()
+    var searchBarIsEmpty: Bool {
+        guard let text = searchController.searchBar.text else {
+            return false
+        }
+        return text.isEmpty
+    }
+    private var isFiltering:Bool{
+        return searchController.isActive && !searchBarIsEmpty
+    }
+    
+    
     
     // MARK:- Override viewDidLoad
     override func viewDidLoad() {
@@ -32,6 +47,15 @@ class BreedsViewController: UIViewController {
         tableView.dataSource = self
         setupTableView()
         fetchData()
+        setupSearchController()
+    }
+    
+    fileprivate func setupSearchController(){
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search breed"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
     }
     
     // MARK:- method Setup TableView
@@ -60,22 +84,47 @@ class BreedsViewController: UIViewController {
 // MARK:- Extension tableView
 extension BreedsViewController: UITableViewDataSource, UITableViewDelegate{
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+           if isFiltering {
+               return filteredBreed.count
+           }
+           return breedsCat.count
+       }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let breedCatName = breedsCat[indexPath.row].name
+        
+        var breed: Breed
+        if isFiltering{
+            breed = filteredBreed[indexPath.row]
+        } else {
+            breed = breedsCat[indexPath.row]
+        }
+        
+        let breedCatName = breed.name
         cell.textLabel?.text = breedCatName
         return cell
     }
    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return breedsCat.count
-    }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
+// MARK:- extension UiSearch
+extension BreedsViewController: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
     
+    private func filterContentForSearchText(_ searchText: String){
+        filteredBreed = breedsCat.filter({ (breed: Breed) -> Bool in
+            
+            return (breed.name?.lowercased().contains(searchText.lowercased()))!
+        })
+        
+        tableView.reloadData()
+    }
+}
+
     
 
