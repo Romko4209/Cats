@@ -34,6 +34,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="hDE-W2-7Ro" kind="relationship" relationship="viewControllers" id="71B-SD-5wi"/>
+                        <segue destination="ffd-En-xH9" kind="relationship" relationship="viewControllers" id="EpQ-GF-xf5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FvI-5G-fcC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -58,6 +59,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bv-Er-X81" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="567" y="71"/>
+        </scene>
+        <!--Main Games Controller-->
+        <scene sceneID="ImX-Oj-zyV">
+            <objects>
+                <viewController title="Main Games Controller" id="GgD-h4-fcz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cVb-YL-bXx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="B2h-l5-wAg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Games" id="cBj-qY-rQ7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KId-Vg-Y06" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="851"/>
+        </scene>
+        <!--Games-->
+        <scene sceneID="rmC-pi-FwB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ffd-En-xH9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Games" id="vgB-Ho-uDH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DfE-Ie-J0D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GgD-h4-fcz" kind="relationship" relationship="rootViewController" id="6fK-uY-aK2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEP-Jt-Xlg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566" y="852"/>
         </scene>
     </scenes>
     <resources>
