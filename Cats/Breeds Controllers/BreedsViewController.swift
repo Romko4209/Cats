@@ -50,6 +50,7 @@ class BreedsViewController: UIViewController {
         setupSearchController()
     }
     
+    // MARK:- setup Search Controller
     fileprivate func setupSearchController(){
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false

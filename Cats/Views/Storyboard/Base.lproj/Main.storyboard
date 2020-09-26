@@ -18,10 +18,29 @@
                         <viewLayoutGuide key="safeArea" id="IwG-hV-fc0"/>
                     </view>
                     <navigationItem key="navigationItem" title="Cat breeds" id="Kmv-DX-Osx"/>
+                    <connections>
+                        <segue destination="qCI-n1-l5W" kind="show" identifier="breedToDetailController" id="Wt5-wO-78K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yA-1Y-SxN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1525.5999999999999" y="70.614692653673174"/>
+        </scene>
+        <!--Detail Cat VC-->
+        <scene sceneID="AL5-4k-uFs">
+            <objects>
+                <viewController title="Detail Cat VC" id="qCI-n1-l5W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iju-u1-iyS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YgK-Ws-yWM"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="xyG-Va-JGB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1AB-Tu-A3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2462" y="71"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wCN-cn-Qez">
@@ -94,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KId-Vg-Y06" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1526" y="851"/>
+            <point key="canvasLocation" x="1526" y="1039"/>
         </scene>
         <!--Games-->
         <scene sceneID="rmC-pi-FwB">
@@ -113,7 +132,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEP-Jt-Xlg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566" y="852"/>
+            <point key="canvasLocation" x="566" y="1039"/>
         </scene>
         <!--Quiz Controller-->
         <scene sceneID="hrD-zv-fGG">
@@ -129,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNY-TY-xlK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2562" y="851"/>
+            <point key="canvasLocation" x="2570" y="1039"/>
         </scene>
     </scenes>
     <resources>
