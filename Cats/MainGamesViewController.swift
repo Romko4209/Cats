@@ -10,7 +10,7 @@ import UIKit
 
 class MainGamesViewController: UIViewController{
 
-     // MARK:- UI objects
+    // MARK:- UI objects
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -28,7 +28,7 @@ class MainGamesViewController: UIViewController{
     private var breeds = [Breed]()
     private var questionCount = 3
        
-        // MARK:- Override viewDidLoad
+    // MARK:- Override viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
@@ -36,6 +36,7 @@ class MainGamesViewController: UIViewController{
         
     }
     
+    // MARK:- Setup collection view
     fileprivate func setupCollectionView(){
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -53,6 +54,7 @@ class MainGamesViewController: UIViewController{
         collectionView.isHidden = true
        }
     
+    // MARK:- fetch data
     private func fetchDataBreedsCats(){
         networkManager.onCompletionBreeds = { breeds in
             self.breeds = breeds
@@ -62,6 +64,19 @@ class MainGamesViewController: UIViewController{
         }
         
         networkManager.fetchBreeds()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     
+        switch segue.identifier {
+        case "QuizGameSegue":
+            if let dest = segue.destination as? QuizViewController{
+                dest.listBreeds = breeds
+                dest.questionCount = questionCount
+            }
+        default:
+            return
+        }
     }
     
 }
@@ -84,6 +99,7 @@ extension MainGamesViewController: UICollectionViewDataSource,UICollectionViewDe
         return CGSize(width: collectionView.frame.width - 32, height: collectionView.frame.height/3.5)
      }
      
+    // MARK:- selected games
      func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let game = games[indexPath.row]
         switch game.photoGames{

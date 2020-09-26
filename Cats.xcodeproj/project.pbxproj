@@ -14,6 +14,8 @@
 		0566589C251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566589B251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift */; };
 		0566589E251F7D3800BE8E4F /* ImageCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566589D251F7D3800BE8E4F /* ImageCat.swift */; };
 		056658A0251F7F5900BE8E4F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566589F251F7F5900BE8E4F /* Game.swift */; };
+		056658A2251F861E00BE8E4F /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658A1251F861E00BE8E4F /* QuizViewController.swift */; };
+		056658A4251F870900BE8E4F /* Extension + UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658A3251F870900BE8E4F /* Extension + UIImageView.swift */; };
 		058DF8F1251E3471005D5B05 /* BreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058DF8F0251E3471005D5B05 /* BreedsViewController.swift */; };
 		05E33F0E251E313E0024DC57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E33F0D251E313E0024DC57 /* AppDelegate.swift */; };
 		05E33F10251E313E0024DC57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E33F0F251E313E0024DC57 /* SceneDelegate.swift */; };
@@ -30,6 +32,8 @@
 		0566589B251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		0566589D251F7D3800BE8E4F /* ImageCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCat.swift; sourceTree = "<group>"; };
 		0566589F251F7F5900BE8E4F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		056658A1251F861E00BE8E4F /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		056658A3251F870900BE8E4F /* Extension + UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIImageView.swift"; sourceTree = "<group>"; };
 		058DF8F0251E3471005D5B05 /* BreedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewController.swift; sourceTree = "<group>"; };
 		05E33F0A251E313E0024DC57 /* Cats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E33F0D251E313E0024DC57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				05665898251F792900BE8E4F /* MainGamesViewController.swift */,
+				056658A1251F861E00BE8E4F /* QuizViewController.swift */,
 			);
 			name = "Games Controllers";
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 		05E33F25251E31E20024DC57 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				056658A3251F870900BE8E4F /* Extension + UIImageView.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -238,6 +244,8 @@
 				05281683251E712800DCDAD9 /* NetworkCatsManager.swift in Sources */,
 				0566589E251F7D3800BE8E4F /* ImageCat.swift in Sources */,
 				05E33F0E251E313E0024DC57 /* AppDelegate.swift in Sources */,
+				056658A2251F861E00BE8E4F /* QuizViewController.swift in Sources */,
+				056658A4251F870900BE8E4F /* Extension + UIImageView.swift in Sources */,
 				058DF8F1251E3471005D5B05 /* BreedsViewController.swift in Sources */,
 				05E33F10251E313E0024DC57 /* SceneDelegate.swift in Sources */,
 				05281685251E716100DCDAD9 /* Constant.swift in Sources */,

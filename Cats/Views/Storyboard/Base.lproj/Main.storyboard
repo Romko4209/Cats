@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="566" y="852"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz Controller-->
         <scene sceneID="hrD-zv-fGG">
             <objects>
-                <viewController id="0mO-kZ-f0c" sceneMemberID="viewController">
+                <viewController title="Quiz Controller" id="0mO-kZ-f0c" customClass="QuizViewController" customModule="Cats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jHf-Cq-P62">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
