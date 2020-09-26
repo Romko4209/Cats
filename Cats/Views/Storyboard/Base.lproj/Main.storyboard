@@ -35,11 +35,28 @@
                     <connections>
                         <segue destination="hDE-W2-7Ro" kind="relationship" relationship="viewControllers" id="71B-SD-5wi"/>
                         <segue destination="ffd-En-xH9" kind="relationship" relationship="viewControllers" id="EpQ-GF-xf5"/>
+                        <segue destination="Xpj-MS-Kai" kind="relationship" relationship="viewControllers" id="kZQ-g4-7Cg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FvI-5G-fcC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-459" y="71"/>
+        </scene>
+        <!--Photos Controller-->
+        <scene sceneID="j7f-xq-xiU">
+            <objects>
+                <viewController title="Photos Controller" id="Xpj-MS-Kai" customClass="PhotosViewController" customModule="Cats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gX1-jb-gIe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pmr-3J-JiR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Photos" image="photo.on.rectangle" catalog="system" id="cQa-Tt-sCI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iwe-Cr-f98" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566" y="-788"/>
         </scene>
         <!--Breed-->
         <scene sceneID="HCv-gv-Vvz">
@@ -118,5 +135,6 @@
     <resources>
         <image name="gamecontroller" catalog="system" width="128" height="82"/>
         <image name="list.number" catalog="system" width="128" height="97"/>
+        <image name="photo.on.rectangle" catalog="system" width="128" height="98"/>
     </resources>
 </document>
