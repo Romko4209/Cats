@@ -10,6 +10,7 @@
 		0505CFFC2520013B00FAE7C8 /* DetailCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0505CFFA2520013B00FAE7C8 /* DetailCatViewController.swift */; };
 		0505CFFD2520013B00FAE7C8 /* BreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0505CFFB2520013B00FAE7C8 /* BreedsViewController.swift */; };
 		0505CFFF2520018300FAE7C8 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0505CFFE2520018300FAE7C8 /* GalleryCollectionViewCell.swift */; };
+		0505D001252001BB00FAE7C8 /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0505D000252001BB00FAE7C8 /* GalleryCollectionView.swift */; };
 		05281685251E716100DCDAD9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05281684251E716100DCDAD9 /* Constant.swift */; };
 		056658B1251FD3CB00BE8E4F /* Extension + UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658AE251FD3CB00BE8E4F /* Extension + UIImageView.swift */; };
 		056658B2251FD3CB00BE8E4F /* Extension + UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658AF251FD3CB00BE8E4F /* Extension + UILabel.swift */; };
@@ -32,6 +33,7 @@
 		0505CFFA2520013B00FAE7C8 /* DetailCatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailCatViewController.swift; path = "Cats/View Controllers/Breeds Controllers/DetailCatViewController.swift"; sourceTree = SOURCE_ROOT; };
 		0505CFFB2520013B00FAE7C8 /* BreedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BreedsViewController.swift; path = "Cats/View Controllers/Breeds Controllers/BreedsViewController.swift"; sourceTree = SOURCE_ROOT; };
 		0505CFFE2520018300FAE7C8 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryCollectionViewCell.swift; path = "Gallery Collection View/GalleryCollectionViewCell.swift"; sourceTree = "<group>"; };
+		0505D000252001BB00FAE7C8 /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GalleryCollectionView.swift; path = "Gallery Collection View/GalleryCollectionView.swift"; sourceTree = "<group>"; };
 		05281684251E716100DCDAD9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		056658AE251FD3CB00BE8E4F /* Extension + UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extension + UIImageView.swift"; path = "Extension/Extension + UIImageView.swift"; sourceTree = "<group>"; };
 		056658AF251FD3CB00BE8E4F /* Extension + UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extension + UILabel.swift"; path = "Extension/Extension + UILabel.swift"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				0505CFFE2520018300FAE7C8 /* GalleryCollectionViewCell.swift */,
+				0505D000252001BB00FAE7C8 /* GalleryCollectionView.swift */,
 			);
 			name = "Gallery Collection View";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				056658BD251FD49D00BE8E4F /* PhotosViewController.swift in Sources */,
 				0505CFFF2520018300FAE7C8 /* GalleryCollectionViewCell.swift in Sources */,
+				0505D001252001BB00FAE7C8 /* GalleryCollectionView.swift in Sources */,
 				056658B8251FD43400BE8E4F /* Game.swift in Sources */,
 				056658BB251FD43400BE8E4F /* ImageCat.swift in Sources */,
 				056658B3251FD3CB00BE8E4F /* Extension + UIButton.swift in Sources */,
