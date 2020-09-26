@@ -10,6 +10,7 @@ import UIKit
 
 class DetailCatViewController: UIViewController {
 
+    // MARK:- UI objects
     private let scrollView: UIScrollView = {
         let scroll = UIScrollView()
         scroll.translatesAutoresizingMaskIntoConstraints = false
@@ -99,6 +100,9 @@ class DetailCatViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+    
+    
+    // MARK:- Override viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -108,6 +112,7 @@ class DetailCatViewController: UIViewController {
         
     }
     
+    // MARK:- method setupScrollView
     fileprivate func setupScrollView(){
         view.addSubview(scrollView)
         scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
@@ -115,7 +120,8 @@ class DetailCatViewController: UIViewController {
         scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
     }
-  
+    
+    // MARK:- method setupGalleryView
     fileprivate func setupGalleryView(){
         scrollView.addSubview(galleryView)
   
@@ -126,6 +132,7 @@ class DetailCatViewController: UIViewController {
         galleryView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
     }
     
+    // MARK:- method setupStackView
     fileprivate func setupStackView(){
         scrollView.addSubview(stackView)
         
