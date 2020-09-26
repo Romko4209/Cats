@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05281681251E70DC00DCDAD9 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05281680251E70DC00DCDAD9 /* Breed.swift */; };
-		05281683251E712800DCDAD9 /* NetworkCatsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05281682251E712800DCDAD9 /* NetworkCatsManager.swift */; };
 		05281685251E716100DCDAD9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05281684251E716100DCDAD9 /* Constant.swift */; };
-		05665899251F792900BE8E4F /* MainGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05665898251F792900BE8E4F /* MainGamesViewController.swift */; };
 		0566589C251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566589B251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift */; };
-		0566589E251F7D3800BE8E4F /* ImageCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566589D251F7D3800BE8E4F /* ImageCat.swift */; };
-		056658A0251F7F5900BE8E4F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566589F251F7F5900BE8E4F /* Game.swift */; };
-		056658A2251F861E00BE8E4F /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658A1251F861E00BE8E4F /* QuizViewController.swift */; };
-		056658A4251F870900BE8E4F /* Extension + UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658A3251F870900BE8E4F /* Extension + UIImageView.swift */; };
-		056658A7251F96CD00BE8E4F /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658A6251F96CD00BE8E4F /* PhotosViewController.swift */; };
-		056658A9251FBF1B00BE8E4F /* Extension + UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658A8251FBF1B00BE8E4F /* Extension + UILabel.swift */; };
-		056658AB251FBF3E00BE8E4F /* Extension + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658AA251FBF3E00BE8E4F /* Extension + UIButton.swift */; };
 		056658AD251FCEE700BE8E4F /* DetailCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658AC251FCEE700BE8E4F /* DetailCatViewController.swift */; };
+		056658B1251FD3CB00BE8E4F /* Extension + UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658AE251FD3CB00BE8E4F /* Extension + UIImageView.swift */; };
+		056658B2251FD3CB00BE8E4F /* Extension + UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658AF251FD3CB00BE8E4F /* Extension + UILabel.swift */; };
+		056658B3251FD3CB00BE8E4F /* Extension + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658B0251FD3CB00BE8E4F /* Extension + UIButton.swift */; };
+		056658B8251FD43400BE8E4F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658B4251FD43300BE8E4F /* Game.swift */; };
+		056658B9251FD43400BE8E4F /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658B5251FD43400BE8E4F /* Breed.swift */; };
+		056658BA251FD43400BE8E4F /* NetworkCatsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658B6251FD43400BE8E4F /* NetworkCatsManager.swift */; };
+		056658BB251FD43400BE8E4F /* ImageCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658B7251FD43400BE8E4F /* ImageCat.swift */; };
+		056658BD251FD49D00BE8E4F /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658BC251FD49D00BE8E4F /* PhotosViewController.swift */; };
+		056658C0251FD4AB00BE8E4F /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658BE251FD4AB00BE8E4F /* QuizViewController.swift */; };
+		056658C1251FD4AB00BE8E4F /* MainGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658BF251FD4AB00BE8E4F /* MainGamesViewController.swift */; };
 		058DF8F1251E3471005D5B05 /* BreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058DF8F0251E3471005D5B05 /* BreedsViewController.swift */; };
 		05E33F0E251E313E0024DC57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E33F0D251E313E0024DC57 /* AppDelegate.swift */; };
 		05E33F10251E313E0024DC57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E33F0F251E313E0024DC57 /* SceneDelegate.swift */; };
@@ -29,19 +29,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05281680251E70DC00DCDAD9 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
-		05281682251E712800DCDAD9 /* NetworkCatsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCatsManager.swift; sourceTree = "<group>"; };
 		05281684251E716100DCDAD9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		05665898251F792900BE8E4F /* MainGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGamesViewController.swift; sourceTree = "<group>"; };
 		0566589B251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
-		0566589D251F7D3800BE8E4F /* ImageCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCat.swift; sourceTree = "<group>"; };
-		0566589F251F7F5900BE8E4F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		056658A1251F861E00BE8E4F /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
-		056658A3251F870900BE8E4F /* Extension + UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIImageView.swift"; sourceTree = "<group>"; };
-		056658A6251F96CD00BE8E4F /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
-		056658A8251FBF1B00BE8E4F /* Extension + UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UILabel.swift"; sourceTree = "<group>"; };
-		056658AA251FBF3E00BE8E4F /* Extension + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIButton.swift"; sourceTree = "<group>"; };
 		056658AC251FCEE700BE8E4F /* DetailCatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCatViewController.swift; sourceTree = "<group>"; };
+		056658AE251FD3CB00BE8E4F /* Extension + UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extension + UIImageView.swift"; path = "Extension/Extension + UIImageView.swift"; sourceTree = "<group>"; };
+		056658AF251FD3CB00BE8E4F /* Extension + UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extension + UILabel.swift"; path = "Extension/Extension + UILabel.swift"; sourceTree = "<group>"; };
+		056658B0251FD3CB00BE8E4F /* Extension + UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extension + UIButton.swift"; path = "Extension/Extension + UIButton.swift"; sourceTree = "<group>"; };
+		056658B4251FD43300BE8E4F /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Game.swift; path = Models/Game.swift; sourceTree = "<group>"; };
+		056658B5251FD43400BE8E4F /* Breed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Breed.swift; path = Models/Breed.swift; sourceTree = "<group>"; };
+		056658B6251FD43400BE8E4F /* NetworkCatsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkCatsManager.swift; path = Models/NetworkCatsManager.swift; sourceTree = "<group>"; };
+		056658B7251FD43400BE8E4F /* ImageCat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCat.swift; path = Models/ImageCat.swift; sourceTree = "<group>"; };
+		056658BC251FD49D00BE8E4F /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotosViewController.swift; path = "View Controllers/Photos/PhotosViewController.swift"; sourceTree = "<group>"; };
+		056658BE251FD4AB00BE8E4F /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuizViewController.swift; path = "View Controllers/Games/QuizViewController.swift"; sourceTree = "<group>"; };
+		056658BF251FD4AB00BE8E4F /* MainGamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainGamesViewController.swift; path = "View Controllers/Games/MainGamesViewController.swift"; sourceTree = "<group>"; };
 		058DF8F0251E3471005D5B05 /* BreedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewController.swift; sourceTree = "<group>"; };
 		05E33F0A251E313E0024DC57 /* Cats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E33F0D251E313E0024DC57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,8 +66,8 @@
 		05665897251F790100BE8E4F /* Games Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				05665898251F792900BE8E4F /* MainGamesViewController.swift */,
-				056658A1251F861E00BE8E4F /* QuizViewController.swift */,
+				056658BF251FD4AB00BE8E4F /* MainGamesViewController.swift */,
+				056658BE251FD4AB00BE8E4F /* QuizViewController.swift */,
 			);
 			name = "Games Controllers";
 			sourceTree = "<group>";
@@ -83,7 +83,7 @@
 		056658A5251F96AC00BE8E4F /* Photos Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				056658A6251F96CD00BE8E4F /* PhotosViewController.swift */,
+				056658BC251FD49D00BE8E4F /* PhotosViewController.swift */,
 			);
 			name = "Photos Controllers";
 			sourceTree = "<group>";
@@ -158,10 +158,10 @@
 		05E33F24251E31D70024DC57 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				05281680251E70DC00DCDAD9 /* Breed.swift */,
-				0566589D251F7D3800BE8E4F /* ImageCat.swift */,
-				05281682251E712800DCDAD9 /* NetworkCatsManager.swift */,
-				0566589F251F7F5900BE8E4F /* Game.swift */,
+				056658B5251FD43400BE8E4F /* Breed.swift */,
+				056658B4251FD43300BE8E4F /* Game.swift */,
+				056658B7251FD43400BE8E4F /* ImageCat.swift */,
+				056658B6251FD43400BE8E4F /* NetworkCatsManager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -169,9 +169,9 @@
 		05E33F25251E31E20024DC57 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				056658A3251F870900BE8E4F /* Extension + UIImageView.swift */,
-				056658A8251FBF1B00BE8E4F /* Extension + UILabel.swift */,
-				056658AA251FBF3E00BE8E4F /* Extension + UIButton.swift */,
+				056658B0251FD3CB00BE8E4F /* Extension + UIButton.swift */,
+				056658AE251FD3CB00BE8E4F /* Extension + UIImageView.swift */,
+				056658AF251FD3CB00BE8E4F /* Extension + UILabel.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -257,22 +257,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05665899251F792900BE8E4F /* MainGamesViewController.swift in Sources */,
-				056658AB251FBF3E00BE8E4F /* Extension + UIButton.swift in Sources */,
+				056658BD251FD49D00BE8E4F /* PhotosViewController.swift in Sources */,
 				056658AD251FCEE700BE8E4F /* DetailCatViewController.swift in Sources */,
-				056658A7251F96CD00BE8E4F /* PhotosViewController.swift in Sources */,
-				056658A9251FBF1B00BE8E4F /* Extension + UILabel.swift in Sources */,
+				056658B8251FD43400BE8E4F /* Game.swift in Sources */,
+				056658BB251FD43400BE8E4F /* ImageCat.swift in Sources */,
 				0566589C251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift in Sources */,
-				05281681251E70DC00DCDAD9 /* Breed.swift in Sources */,
-				056658A0251F7F5900BE8E4F /* Game.swift in Sources */,
-				05281683251E712800DCDAD9 /* NetworkCatsManager.swift in Sources */,
-				0566589E251F7D3800BE8E4F /* ImageCat.swift in Sources */,
+				056658B3251FD3CB00BE8E4F /* Extension + UIButton.swift in Sources */,
+				056658C0251FD4AB00BE8E4F /* QuizViewController.swift in Sources */,
+				056658BA251FD43400BE8E4F /* NetworkCatsManager.swift in Sources */,
 				05E33F0E251E313E0024DC57 /* AppDelegate.swift in Sources */,
-				056658A2251F861E00BE8E4F /* QuizViewController.swift in Sources */,
-				056658A4251F870900BE8E4F /* Extension + UIImageView.swift in Sources */,
+				056658C1251FD4AB00BE8E4F /* MainGamesViewController.swift in Sources */,
+				056658B9251FD43400BE8E4F /* Breed.swift in Sources */,
 				058DF8F1251E3471005D5B05 /* BreedsViewController.swift in Sources */,
 				05E33F10251E313E0024DC57 /* SceneDelegate.swift in Sources */,
+				056658B1251FD3CB00BE8E4F /* Extension + UIImageView.swift in Sources */,
 				05281685251E716100DCDAD9 /* Constant.swift in Sources */,
+				056658B2251FD3CB00BE8E4F /* Extension + UILabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
