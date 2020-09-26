@@ -13,6 +13,7 @@
 		05665899251F792900BE8E4F /* MainGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05665898251F792900BE8E4F /* MainGamesViewController.swift */; };
 		0566589C251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566589B251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift */; };
 		0566589E251F7D3800BE8E4F /* ImageCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566589D251F7D3800BE8E4F /* ImageCat.swift */; };
+		056658A0251F7F5900BE8E4F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566589F251F7F5900BE8E4F /* Game.swift */; };
 		058DF8F1251E3471005D5B05 /* BreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058DF8F0251E3471005D5B05 /* BreedsViewController.swift */; };
 		05E33F0E251E313E0024DC57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E33F0D251E313E0024DC57 /* AppDelegate.swift */; };
 		05E33F10251E313E0024DC57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E33F0F251E313E0024DC57 /* SceneDelegate.swift */; };
@@ -28,6 +29,7 @@
 		05665898251F792900BE8E4F /* MainGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGamesViewController.swift; sourceTree = "<group>"; };
 		0566589B251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		0566589D251F7D3800BE8E4F /* ImageCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCat.swift; sourceTree = "<group>"; };
+		0566589F251F7F5900BE8E4F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		058DF8F0251E3471005D5B05 /* BreedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewController.swift; sourceTree = "<group>"; };
 		05E33F0A251E313E0024DC57 /* Cats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E33F0D251E313E0024DC57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				05281680251E70DC00DCDAD9 /* Breed.swift */,
 				0566589D251F7D3800BE8E4F /* ImageCat.swift */,
 				05281682251E712800DCDAD9 /* NetworkCatsManager.swift */,
+				0566589F251F7F5900BE8E4F /* Game.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				05665899251F792900BE8E4F /* MainGamesViewController.swift in Sources */,
 				0566589C251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift in Sources */,
 				05281681251E70DC00DCDAD9 /* Breed.swift in Sources */,
+				056658A0251F7F5900BE8E4F /* Game.swift in Sources */,
 				05281683251E712800DCDAD9 /* NetworkCatsManager.swift in Sources */,
 				0566589E251F7D3800BE8E4F /* ImageCat.swift in Sources */,
 				05E33F0E251E313E0024DC57 /* AppDelegate.swift in Sources */,

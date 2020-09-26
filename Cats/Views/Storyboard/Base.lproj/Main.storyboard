@@ -63,7 +63,7 @@
         <!--Main Games Controller-->
         <scene sceneID="ImX-Oj-zyV">
             <objects>
-                <viewController title="Main Games Controller" id="GgD-h4-fcz" sceneMemberID="viewController">
+                <viewController title="Main Games Controller" id="GgD-h4-fcz" customClass="MainGamesViewController" customModule="Cats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cVb-YL-bXx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,6 +71,9 @@
                         <viewLayoutGuide key="safeArea" id="B2h-l5-wAg"/>
                     </view>
                     <navigationItem key="navigationItem" title="Games" id="cBj-qY-rQ7"/>
+                    <connections>
+                        <segue destination="0mO-kZ-f0c" kind="presentation" identifier="QuizGameSegue" modalPresentationStyle="fullScreen" id="8zy-AA-e55"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KId-Vg-Y06" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,7 +83,7 @@
         <scene sceneID="rmC-pi-FwB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ffd-En-xH9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Games" id="vgB-Ho-uDH"/>
+                    <tabBarItem key="tabBarItem" title="Games" image="gamecontroller" catalog="system" id="vgB-Ho-uDH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DfE-Ie-J0D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -95,8 +98,25 @@
             </objects>
             <point key="canvasLocation" x="566" y="852"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="hrD-zv-fGG">
+            <objects>
+                <viewController id="0mO-kZ-f0c" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jHf-Cq-P62">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Xyv-Rb-4aw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cme-hJ-2xH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNY-TY-xlK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2562" y="851"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="gamecontroller" catalog="system" width="128" height="82"/>
         <image name="list.number" catalog="system" width="128" height="97"/>
     </resources>
 </document>
