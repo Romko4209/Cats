@@ -10,6 +10,8 @@
 		05281681251E70DC00DCDAD9 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05281680251E70DC00DCDAD9 /* Breed.swift */; };
 		05281683251E712800DCDAD9 /* NetworkCatsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05281682251E712800DCDAD9 /* NetworkCatsManager.swift */; };
 		05281685251E716100DCDAD9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05281684251E716100DCDAD9 /* Constant.swift */; };
+		05665899251F792900BE8E4F /* MainGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05665898251F792900BE8E4F /* MainGamesViewController.swift */; };
+		0566589C251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566589B251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift */; };
 		058DF8F1251E3471005D5B05 /* BreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058DF8F0251E3471005D5B05 /* BreedsViewController.swift */; };
 		05E33F0E251E313E0024DC57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E33F0D251E313E0024DC57 /* AppDelegate.swift */; };
 		05E33F10251E313E0024DC57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E33F0F251E313E0024DC57 /* SceneDelegate.swift */; };
@@ -22,6 +24,8 @@
 		05281680251E70DC00DCDAD9 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 		05281682251E712800DCDAD9 /* NetworkCatsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCatsManager.swift; sourceTree = "<group>"; };
 		05281684251E716100DCDAD9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		05665898251F792900BE8E4F /* MainGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGamesViewController.swift; sourceTree = "<group>"; };
+		0566589B251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		058DF8F0251E3471005D5B05 /* BreedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewController.swift; sourceTree = "<group>"; };
 		05E33F0A251E313E0024DC57 /* Cats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E33F0D251E313E0024DC57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,12 +47,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		058DF8EF251E3442005D5B05 /* Breeds Controller */ = {
+		05665897251F790100BE8E4F /* Games Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05665898251F792900BE8E4F /* MainGamesViewController.swift */,
+			);
+			name = "Games Controllers";
+			sourceTree = "<group>";
+		};
+		0566589A251F7C7B00BE8E4F /* Gallery Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				0566589B251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift */,
+			);
+			name = "Gallery Collection View";
+			sourceTree = "<group>";
+		};
+		058DF8EF251E3442005D5B05 /* Breeds Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				058DF8F0251E3471005D5B05 /* BreedsViewController.swift */,
 			);
-			path = "Breeds Controller";
+			path = "Breeds Controllers";
 			sourceTree = "<group>";
 		};
 		05E33F01251E313E0024DC57 = {
@@ -71,8 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				05E33F24251E31D70024DC57 /* Models */,
-				05E33F26251E31ED0024DC57 /* View Controllers */,
 				05E33F22251E31AC0024DC57 /* Views */,
+				05E33F26251E31ED0024DC57 /* View Controllers */,
 				05E33F25251E31E20024DC57 /* Extension */,
 				05E33F21251E318F0024DC57 /* Support Files */,
 			);
@@ -95,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				05E33F23251E31BA0024DC57 /* Storyboard */,
+				0566589A251F7C7B00BE8E4F /* Gallery Collection View */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,7 +148,8 @@
 		05E33F26251E31ED0024DC57 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				058DF8EF251E3442005D5B05 /* Breeds Controller */,
+				058DF8EF251E3442005D5B05 /* Breeds Controllers */,
+				05665897251F790100BE8E4F /* Games Controllers */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -203,6 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05665899251F792900BE8E4F /* MainGamesViewController.swift in Sources */,
+				0566589C251F7CBC00BE8E4F /* GalleryCollectionViewCell.swift in Sources */,
 				05281681251E70DC00DCDAD9 /* Breed.swift in Sources */,
 				05281683251E712800DCDAD9 /* NetworkCatsManager.swift in Sources */,
 				05E33F0E251E313E0024DC57 /* AppDelegate.swift in Sources */,
