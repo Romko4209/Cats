@@ -80,6 +80,31 @@ class BreedsViewController: UIViewController {
         networkManager.fetchBreeds()
     }
     
+    // MARK:- Segue to DetailVC
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let dest = segue.destination as? DetailCatViewController{
+            
+            var breed: Breed?
+            
+            if isFiltering {
+                guard let index = tableView.indexPathForSelectedRow else {return}
+                breed = filteredBreed[index.row]
+            } else if segue.identifier == "randomToDetail"{
+                
+                if breedsCat.count > 0{
+                breed = breedsCat[Int.random(in: 0..<breedsCat.count)]
+                }
+                
+            } else {
+                guard let index = tableView.indexPathForSelectedRow else {return}
+                breed = breedsCat[index.row]
+            }
+            dest.cat = breed
+            
+        }
+    }
+    
 }
 
 // MARK:- Extension tableView
@@ -109,7 +134,7 @@ extension BreedsViewController: UITableViewDataSource, UITableViewDelegate{
    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-
+        performSegue(withIdentifier: "breedToDetailController", sender: nil)
     }
 }
 // MARK:- extension UiSearch

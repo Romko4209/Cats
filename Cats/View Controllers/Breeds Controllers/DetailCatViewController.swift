@@ -20,7 +20,6 @@ class DetailCatViewController: UIViewController {
     private let galleryView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .green
         return view
     }()
     
@@ -101,15 +100,25 @@ class DetailCatViewController: UIViewController {
         return button
     }()
     
+    var galleryCollectionView = GalleryCollectionView()
+    
+    // MARK:- NetworkManager
+    var networkManager = NetworkCatsManager()
+    
+    // MARK:- class fields
+    var cat: Breed?
+    var imagesURL = [ImageCat]()
     
     // MARK:- Override viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupScrollView()
         setupGalleryView()
         setupStackView()
-        
+        isHidenLabels(varBool: true)
+        setupInformation()
+        setupGallery()
+        loadImages()
     }
     
     // MARK:- method setupScrollView
@@ -150,6 +159,54 @@ class DetailCatViewController: UIViewController {
         stackView.addArrangedSubview(avarageLifeSpanLabel)
         stackView.addArrangedSubview(wikipediaButton)
     }
-
     
+    // MARK:- method setup information
+    fileprivate func setupInformation(){
+         guard let cat = cat else {return}
+         
+         nameLabel.text = cat.name
+         descriptionLabel.text = cat.description
+         temperamentLabel.text = cat.temperament
+         countryLabel.text = cat.origin
+         weightLabel.text = "\(cat.weight.metric ?? "None") kgs"
+         avarageLifeSpanLabel.text = "\(cat.life_span ?? "None") average life span"
+     }
+   
+    // MARK:- method setupGallery
+    fileprivate func setupGallery(){
+        galleryView.addSubview(galleryCollectionView)
+                
+        galleryCollectionView.leadingAnchor.constraint(equalTo: galleryView.leadingAnchor).isActive = true
+        galleryCollectionView.trailingAnchor.constraint(equalTo: galleryView.trailingAnchor).isActive = true
+        galleryCollectionView.centerYAnchor.constraint(equalTo: galleryView.centerYAnchor).isActive = true
+        galleryCollectionView.heightAnchor.constraint(equalTo: galleryView.heightAnchor).isActive = true
+     }
+     
+     // MARK:- method is hidden UI
+     fileprivate func isHidenLabels(varBool:Bool){
+         nameLabel.isHidden = varBool
+         descriptionLabel.isHidden = varBool
+         temperamentLabel.isHidden = varBool
+         countryLabel.isHidden = varBool
+         weightLabel.isHidden = varBool
+         avarageLifeSpanLabel.isHidden = varBool
+         galleryCollectionView.isHidden = varBool
+         wikipediaButton.isHidden = varBool
+     }
+     
+     // MARK:- request images
+     fileprivate func loadImages(){
+         
+         networkManager.onCompletionImages = { images in
+             self.imagesURL = images
+             DispatchQueue.main.async {
+                self.galleryCollectionView.setArrayWithCats(cells: self.imagesURL)
+                 self.isHidenLabels(varBool: false)
+                 self.galleryCollectionView.reloadData()
+             }
+         }
+         
+         networkManager.fetchImagesCats(cat: cat,limit: 4)
+         
+     }
 }
