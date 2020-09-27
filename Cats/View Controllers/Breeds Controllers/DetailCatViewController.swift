@@ -102,6 +102,7 @@ class DetailCatViewController: UIViewController {
         button.setTitle(" Wikipedia ", for: .normal)
         button.backgroundColor = .lightGray
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(buttonWikipediaTapped), for: .touchUpInside)
         return button
     }()
     
@@ -212,4 +213,11 @@ class DetailCatViewController: UIViewController {
          }
          networkManager.fetchImagesCats(cat: cat,limit: 4)
      }
+    
+    @objc fileprivate func buttonWikipediaTapped(){
+        let wikiVC: WikiViewController = WikiViewController()
+        guard let cat = cat else { return }
+        wikiVC.urlWiki = cat.wikipedia_url
+        navigationController?.pushViewController(wikiVC, animated: true)
+    }
 }

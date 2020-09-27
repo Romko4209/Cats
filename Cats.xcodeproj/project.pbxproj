@@ -22,6 +22,7 @@
 		056658BD251FD49D00BE8E4F /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658BC251FD49D00BE8E4F /* PhotosViewController.swift */; };
 		056658C0251FD4AB00BE8E4F /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658BE251FD4AB00BE8E4F /* QuizViewController.swift */; };
 		056658C1251FD4AB00BE8E4F /* MainGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056658BF251FD4AB00BE8E4F /* MainGamesViewController.swift */; };
+		05B2FECA2520AC080013CE7A /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2FEC92520AC080013CE7A /* WikiViewController.swift */; };
 		05E33F0E251E313E0024DC57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E33F0D251E313E0024DC57 /* AppDelegate.swift */; };
 		05E33F10251E313E0024DC57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E33F0F251E313E0024DC57 /* SceneDelegate.swift */; };
 		05E33F15251E313E0024DC57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E33F13251E313E0024DC57 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		056658BC251FD49D00BE8E4F /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotosViewController.swift; path = "View Controllers/Photos/PhotosViewController.swift"; sourceTree = "<group>"; };
 		056658BE251FD4AB00BE8E4F /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuizViewController.swift; path = "View Controllers/Games/QuizViewController.swift"; sourceTree = "<group>"; };
 		056658BF251FD4AB00BE8E4F /* MainGamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainGamesViewController.swift; path = "View Controllers/Games/MainGamesViewController.swift"; sourceTree = "<group>"; };
+		05B2FEC92520AC080013CE7A /* WikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WikiViewController.swift; path = "Cats/View Controllers/Breeds Controllers/WikiViewController.swift"; sourceTree = SOURCE_ROOT; };
 		05E33F0A251E313E0024DC57 /* Cats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E33F0D251E313E0024DC57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05E33F0F251E313E0024DC57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				0505CFFB2520013B00FAE7C8 /* BreedsViewController.swift */,
 				0505CFFA2520013B00FAE7C8 /* DetailCatViewController.swift */,
+				05B2FEC92520AC080013CE7A /* WikiViewController.swift */,
 			);
 			path = "Breeds Controllers";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				056658BA251FD43400BE8E4F /* NetworkCatsManager.swift in Sources */,
 				05E33F0E251E313E0024DC57 /* AppDelegate.swift in Sources */,
 				056658C1251FD4AB00BE8E4F /* MainGamesViewController.swift in Sources */,
+				05B2FECA2520AC080013CE7A /* WikiViewController.swift in Sources */,
 				0505CFFD2520013B00FAE7C8 /* BreedsViewController.swift in Sources */,
 				056658B9251FD43400BE8E4F /* Breed.swift in Sources */,
 				05E33F10251E313E0024DC57 /* SceneDelegate.swift in Sources */,
