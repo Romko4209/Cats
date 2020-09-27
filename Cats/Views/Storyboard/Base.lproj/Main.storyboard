@@ -17,7 +17,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="IwG-hV-fc0"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Cat breeds" id="Kmv-DX-Osx"/>
+                    <navigationItem key="navigationItem" title="Cat breeds" id="Kmv-DX-Osx">
+                        <barButtonItem key="rightBarButtonItem" title="Random cat" id="Y1T-Eo-eDI">
+                            <connections>
+                                <segue destination="qCI-n1-l5W" kind="show" identifier="randomToDetail" id="QAA-jh-dNJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="qCI-n1-l5W" kind="show" identifier="breedToDetailController" id="Wt5-wO-78K"/>
                     </connections>
@@ -151,6 +157,9 @@
             <point key="canvasLocation" x="2570" y="1039"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="QAA-jh-dNJ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="gamecontroller" catalog="system" width="128" height="82"/>
         <image name="list.number" catalog="system" width="128" height="97"/>

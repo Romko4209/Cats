@@ -82,9 +82,8 @@ class BreedsViewController: UIViewController {
     
     // MARK:- Segue to DetailVC
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if let dest = segue.destination as? DetailCatViewController{
-            
+           
             var breed: Breed?
             
             if isFiltering {
@@ -133,8 +132,8 @@ extension BreedsViewController: UITableViewDataSource, UITableViewDelegate{
     }
    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "breedToDetailController", sender: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 // MARK:- extension UiSearch

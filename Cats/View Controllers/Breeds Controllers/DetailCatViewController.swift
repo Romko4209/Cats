@@ -39,6 +39,7 @@ class DetailCatViewController: UIViewController {
         label.text = "Name"
         label.font = UIFont(name: "American Typewriter", size: 25)
         label.textColor = .systemIndigo
+        label.numberOfLines = 0
         return label
     }()
     
@@ -49,6 +50,7 @@ class DetailCatViewController: UIViewController {
         label.text = "Description"
         label.font = UIFont(name: "American Typewriter", size: 25)
         label.textColor = .systemOrange
+        label.numberOfLines = 0
         return label
     }()
     
@@ -58,35 +60,38 @@ class DetailCatViewController: UIViewController {
         label.text = "Temperament"
         label.font = UIFont(name: "American Typewriter", size: 25)
         label.textColor = .systemIndigo
+        label.numberOfLines = 0
         return label
     }()
     
     private let countryLabel: UILabel = {
-           let label = UILabel()
-           label.translatesAutoresizingMaskIntoConstraints = false
-           label.text = "Country"
-           label.font = UIFont(name: "American Typewriter", size: 25)
-           label.textColor = .systemOrange
-           return label
-       }()
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Country"
+        label.font = UIFont(name: "American Typewriter", size: 25)
+        label.textColor = .systemOrange
+        label.numberOfLines = 0
+        return label
+    }()
     
     private let weightLabel: UILabel = {
-           let label = UILabel()
-           label.translatesAutoresizingMaskIntoConstraints = false
-           label.text = "Weight"
-           label.font = UIFont(name: "American Typewriter", size: 25)
-           label.textColor = .systemIndigo
-           return label
-       }()
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Weight"
+        label.font = UIFont(name: "American Typewriter", size: 25)
+        label.textColor = .systemIndigo
+        label.numberOfLines = 0
+        return label
+    }()
     
     private let avarageLifeSpanLabel: UILabel = {
-              let label = UILabel()
-              label.translatesAutoresizingMaskIntoConstraints = false
-              label.text = "Avarage Life Span"
-              label.font = UIFont(name: "American Typewriter", size: 25)
-              label.textColor = .systemOrange
-              return label
-          }()
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Avarage Life Span"
+        label.font = UIFont(name: "American Typewriter", size: 25)
+        label.textColor = .systemOrange
+        return label
+    }()
     
     private let wikipediaButton: UIButton = {
         let button = UIButton(type: .system)
@@ -138,7 +143,6 @@ class DetailCatViewController: UIViewController {
         galleryView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
         galleryView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
         galleryView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
-        galleryView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
     }
     
     // MARK:- method setupStackView
@@ -158,12 +162,13 @@ class DetailCatViewController: UIViewController {
         stackView.addArrangedSubview(weightLabel)
         stackView.addArrangedSubview(avarageLifeSpanLabel)
         stackView.addArrangedSubview(wikipediaButton)
+        let viewEmpty = UIView()
+        stackView.addArrangedSubview(viewEmpty)
     }
     
     // MARK:- method setup information
     fileprivate func setupInformation(){
          guard let cat = cat else {return}
-         
          nameLabel.text = cat.name
          descriptionLabel.text = cat.description
          temperamentLabel.text = cat.temperament
@@ -205,8 +210,6 @@ class DetailCatViewController: UIViewController {
                  self.galleryCollectionView.reloadData()
              }
          }
-         
          networkManager.fetchImagesCats(cat: cat,limit: 4)
-         
      }
 }
