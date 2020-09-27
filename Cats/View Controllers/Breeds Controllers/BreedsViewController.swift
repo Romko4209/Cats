@@ -17,6 +17,8 @@ class BreedsViewController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return tableView
     }()
+   
+    @IBOutlet weak var randomCatItem: UIBarButtonItem!
     
     private let searchController = UISearchController(searchResultsController: nil)
 
@@ -45,6 +47,7 @@ class BreedsViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        self.randomCatItem.isEnabled = false
         setupTableView()
         fetchData()
         setupSearchController()
@@ -75,6 +78,7 @@ class BreedsViewController: UIViewController {
             self.breedsCat = breeds
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                self.randomCatItem.isEnabled = true
             }
         }
         networkManager.fetchBreeds()
