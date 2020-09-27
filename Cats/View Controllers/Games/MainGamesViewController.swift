@@ -20,6 +20,8 @@ class MainGamesViewController: UIViewController{
         return cv
     }()
     
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    
     // MARK:- Network Manager
     private var networkManager = NetworkCatsManager()
     
@@ -31,6 +33,11 @@ class MainGamesViewController: UIViewController{
     // MARK:- Override viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator.center = self.view.center
+        activityIndicator.style = UIActivityIndicatorView.Style.large
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+        
         setupCollectionView()
         fetchDataBreedsCats()
         
@@ -60,6 +67,7 @@ class MainGamesViewController: UIViewController{
             self.breeds = breeds
             DispatchQueue.main.async {
                 self.collectionView.isHidden = false
+                self.activityIndicator.stopAnimating()
             }
         }
         

@@ -22,6 +22,8 @@ class BreedsViewController: UIViewController {
     
     private let searchController = UISearchController(searchResultsController: nil)
 
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    
     
     // MARK:- NetworkManager
     private var networkManager = NetworkCatsManager()
@@ -45,6 +47,10 @@ class BreedsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        activityIndicator.center = self.view.center
+        activityIndicator.style = UIActivityIndicatorView.Style.large
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
         tableView.delegate = self
         tableView.dataSource = self
         self.randomCatItem.isEnabled = false
@@ -70,6 +76,7 @@ class BreedsViewController: UIViewController {
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        tableView.isHidden = true
     }
     
     // MARK:- method fetch data (breeds cats)
@@ -77,6 +84,8 @@ class BreedsViewController: UIViewController {
         networkManager.onCompletionBreeds = { breeds in
             self.breedsCat = breeds
             DispatchQueue.main.async {
+                self.activityIndicator.stopAnimating()
+                self.tableView.isHidden = false
                 self.tableView.reloadData()
                 self.randomCatItem.isEnabled = true
             }

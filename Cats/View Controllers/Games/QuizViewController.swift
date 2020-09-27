@@ -45,12 +45,16 @@ class QuizViewController: UIViewController {
         return button
     }()
     
+    var image = UIImageView()
+    
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    
     // MARK:- Network Manager
     var networkManager = NetworkCatsManager()
     
     // MARK:- class fields
     var buttons = [UIButton]()
-    var image = UIImageView()
+    
     
     var listBreeds = [Breed]()
     
@@ -65,6 +69,9 @@ class QuizViewController: UIViewController {
           super.viewDidLoad()
         setupViews()
         setupVCForQuizOne()
+        activityIndicator.style = UIActivityIndicatorView.Style.large
+        image.addSubview(activityIndicator)
+        activityIndicator.center = image.center
         updateUI()
           
       }
@@ -97,6 +104,7 @@ class QuizViewController: UIViewController {
         
         let randomIndex = Int.random(in: 0..<listBreeds.count)
            
+        
         loadImage(breed: listBreeds[randomIndex])
 
         answer = listBreeds[randomIndex].name
@@ -149,7 +157,7 @@ class QuizViewController: UIViewController {
         topView.addSubview(imageView)
         bottomView.addSubview(stackView)
         bottomView.addSubview(confirmButton)
-           
+        
         imageView.centerXAnchor.constraint(equalTo: topView.centerXAnchor).isActive = true
         imageView.centerYAnchor.constraint(equalTo: topView.centerYAnchor).isActive = true
         imageView.heightAnchor.constraint(equalTo: topView.widthAnchor, multiplier: 0.6).isActive = true
@@ -160,7 +168,6 @@ class QuizViewController: UIViewController {
         exitButton.trailingAnchor.constraint(equalTo: topView.trailingAnchor,constant: -8).isActive = true
         exitButton.heightAnchor.constraint(equalTo: topView.heightAnchor, multiplier: 0.11).isActive = true
         exitButton.widthAnchor.constraint(equalTo: topView.heightAnchor, multiplier: 0.11).isActive = true
-        
         
         stackView.topAnchor.constraint(equalTo: bottomView.topAnchor).isActive = true
         stackView.centerXAnchor.constraint(equalTo: bottomView.centerXAnchor).isActive = true
@@ -173,9 +180,13 @@ class QuizViewController: UIViewController {
        
     // MARK:- request image
     fileprivate func loadImage(breed cat:Breed?){
+        activityIndicator.startAnimating()
         networkManager.onCompletionImages = { images in
             guard let imageURL = images[0].url else {return}
             self.image.imageURL(imageURL: imageURL)
+            DispatchQueue.main.async {
+                    self.activityIndicator.stopAnimating()
+            }
         }
         networkManager.fetchImagesCats(cat: cat, limit: 1)
         

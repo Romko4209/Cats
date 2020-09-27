@@ -36,6 +36,8 @@ class PhotosViewController: UIViewController {
         return label
     }()
     
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    
     // MARK:- NetworkManager
     var networkManager = NetworkCatsManager()
     
@@ -53,7 +55,12 @@ class PhotosViewController: UIViewController {
     // MARK:- Override viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator.center = self.view.center
+        activityIndicator.style = UIActivityIndicatorView.Style.large
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
         setupUI()
+        
         
     }
     
@@ -65,8 +72,8 @@ class PhotosViewController: UIViewController {
     
     // MARK:- method setupUI components
     fileprivate func setupUI(){
+        activityIndicator.startAnimating()
         view.backgroundColor = .systemBackground
-        buttonCat.isHidden = true
         labelIsHidden(true)
         
         loadImages()
@@ -119,6 +126,7 @@ class PhotosViewController: UIViewController {
             DispatchQueue.main.async {
                 self.labelIsHidden(false)
                 self.labelTap.pulsateStartAnimation()
+                self.activityIndicator.stopAnimating()
             }
         }
         networkManager.fetchImagesCats(cat: nil, limit: limitDownloadImage)
